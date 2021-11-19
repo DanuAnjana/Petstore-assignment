@@ -33,11 +33,11 @@ get a pet by id
 
 create a new pet
 
-    curl -XPOST -H "Content-type: application/json" -d '{"petId":5,"petType":"dog","petName":"shibba","petAge":5}' 'http://localhost:8080/v1/pets/petscreate'
+    curl -XPOST -H "Content-type: application/json" -d '{"petId":4,"petType":"dog","petName":"shibba","petAge":5}' 'http://localhost:8080/v1/pets/petscreate'
 
 update existing pet
 
-    curl -XPUT -d '{"petId":4,"petType":"dog","petName":"shibba","petAge":6}' 'http://localhost:8080/v1/pets/update'
+    curl -XPUT -d '{"petId":3,"petType":"Bird","petName":"Chuti Peththappu","petAge":6}' 'http://localhost:8080/v1/pets/update'
 
 delete existing pet
 
@@ -45,7 +45,7 @@ delete existing pet
 
 search pet
 
-    curl -XDELETE -H "Content-type: application/json" 'http://localhost:8080/v1/pets//search?id=1'
+    curl -XDELETE -H "Content-type: application/json" 'http://localhost:8080/v1/pets/search?id=1'
 
 ## Pet Types
 get all the pet types
@@ -58,7 +58,7 @@ get a pet types by id
 
 create a new pet types
 
-    curl -XPOST -H "Content-type: application/json" 'http://localhost:8080/v1/petTypes/create'
+    curl -XPOST -H "Content-type: application/json" -d '{"typeId" :4,"typeName":"Fish"}' 'http://localhost:8080/v1/petTypes/create'
 
 update existing pet types
 
@@ -66,6 +66,6 @@ update existing pet types
 
 delete existing pet types
 
-    curl -XDELETE -H "Content-type: application/json" 'http://localhost:8080/v1/petTypes/delete/3'
+    curl -XDELETE -H "Content-type: application/json" 'http://localhost:8080/v1/petTypes/delete/4'
 
 
